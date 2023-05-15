@@ -1,10 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function AppHeader({}) {
+export default function AppHeader(props) {
     return(
         <View>
             <Text style={styles.header}>
-                Baham (باہم)
+                {props.heading}
+            </Text>
+            <Text style={styles.slogan}>
+                {props.slogan}
             </Text>
         </View>
     );
@@ -17,5 +20,12 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         color: 'black'
-    }
+    },
+    slogan: {
+        padding: 10,
+        fontSize: 15,
+        textAlign: 'center',
+        fontWeight: 'bold',
+        color: 'black'
+    },
 });

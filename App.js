@@ -69,7 +69,7 @@ const renderSectionHeader = ({ section }) => {
 const renderVehicleModelItem = ({ item }) => {
   return (
     <View>
-      <Text>{item.name} ({item.capacity})</Text>
+      <Text>{item.name} -- ({item.capacity})</Text>
     </View>
   );
 }  
@@ -81,8 +81,8 @@ const itemSeparatorComponent = () => <View style={{ borderColor: 'black', border
     // Demo: Section List
     <View style={styles.container}>
       {/* Attach header component */}
-      <AppHeader />
-      <Login />
+      <AppHeader heading = "Baham (باہم)" slogan = "..Reduce carbon footprint.."/>
+      
       <View style={styles.mainContainer}>
         <SectionList 
         sections={allVehicles}
@@ -93,7 +93,10 @@ const itemSeparatorComponent = () => <View style={{ borderColor: 'black', border
         />
       </View>
       {/* Attach footer component */}
-      <AppFooter />
+      <AppFooter copyright = "Copyright: Baham by project Dareecha (2023) -" 
+        footer = "Karachi Insitute of Economics & Technology" 
+      />
+      <Login />
     </View>
   );
 }
@@ -102,7 +105,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'space-between',
-    backgroundColor: 'gold'
+    backgroundColor: '#009387'
   },
   mainContainer: {
     flex: 1,
