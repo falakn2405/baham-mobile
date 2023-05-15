@@ -92,11 +92,11 @@ const itemSeparatorComponent = () => <View style={{ borderColor: 'black', border
         keyExtractor={(item, index) => item.id * (item.id + index)}
         />
       </View>
+      <Login />
       {/* Attach footer component */}
       <AppFooter copyright = "Copyright: Baham by project Dareecha (2023) -" 
         footer = "Karachi Insitute of Economics & Technology" 
       />
-      <Login />
     </View>
   );
 }

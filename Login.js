@@ -24,7 +24,7 @@ const Login = () => {
                 placeholder="Falak"
                 onChangeText={(value) => setName(value)}
             />
-            <Text>First Name:</Text>
+            <Text>Last Name:</Text>
             <TextInput
                 style={styles.input}
                 placeholder="Naz"
@@ -55,7 +55,10 @@ const Login = () => {
                 value={value}
                 style={styles.feedback}
             />        
-            <Button title="Submit" color="#1f65ff"/>
+            <View style={{marginVertical: 20}}>
+                <Button title="Submit" color="#1f65ff"/>    
+            </View>
+            
         </View>
     );
 }
