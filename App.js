@@ -19,7 +19,7 @@ const App = () => {
     <NavigationContainer>
       <View style={styles.container}>
         <AppHeader />
-          <Drawer.Navigator drawerContent={props => <DrawerContent {...props}/>}>
+          <Drawer.Navigator initialRouteName="Login" drawerContent={props => <DrawerContent {...props}/>}>
             <Drawer.Screen name="Login" component={Login} />
             <Drawer.Screen name="Menu" component={Menu} />
             <Drawer.Screen name="Home" component={Home} />
